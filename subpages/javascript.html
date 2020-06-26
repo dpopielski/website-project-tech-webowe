@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technologie Webowe - JS</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        
+        <div class="header">
+
+            <!-- <button class="hamburger" aria-label="Menu">
+                <span class="hamburger_container" tabindex="-1">
+                    <span class="hamburger_bars"></span>
+                </span>
+            </button> -->
+            
+            <div class="navBar">
+                <ul>
+                    <li class="navLi">
+                        <a class="navElement" href="../index.html">
+                            <img  src="../images/homev3.svg" alt="">
+                            <span>Strona Główna</span>
+                        </a>
+                    </li>
+                    <li class="navLi">
+                        <a class="navElement" href="../subpages/html.html">
+                            <img  src="../images/html.svg" alt="">
+                            <span>HTML</span>
+                        </a>
+                    </li>
+                    <li class="navLi">
+                        <a class="navElement" href="../subpages/css.html">
+                            <img src="../images/css.svg" alt="">
+                            <span>CSS</span>
+                        </a>
+                    </li>
+                    <li class="navLi">
+                        <a class="navElement-active" href="../subpages/javascript.html">
+                            <img  src="../images/js.svg" alt="">
+                            <span>JavaScript</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <h1>ToDo Lista</h1>
+        </div>
+        
+        <div id="myDIV" class="ToDoHeader">
+            <input type="text" id="myInput" placeholder="Co masz w planach?">
+            <span onclick="newElement()" id="myBtn" class="addBtn">Add</span>
+        </div>
+          
+        <ul class="myList" id="myUL">
+            <li class="myLi">ToDo</li>
+        </ul>
+        
+        <div class="bottom_image">
+            <a>
+                <img src="../images/undraw_hacker.svg" alt="">
+            </a>
+        </div>
+
+        <footer>
+            <span>  Privacy Damian Popielski &copy; 2020</span>
+        </footer>
+        
+    </div>
+    
+    <script src="../js/app.js"></script>
+</body>
+</html>

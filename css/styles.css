@@ -1,0 +1,376 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    color: #3F3D56;
+}
+
+.wrapper {
+    min-height: 100vh;
+    position: relative;
+}
+
+.header {
+    text-align: center;
+}
+
+.header > h1 {
+    background-color: #ffffff;
+    text-transform: uppercase;
+    padding: 25px 0px 25px 0px;
+    margin-top: 20px;
+}
+
+ul, a {    
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.navBar > ul {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #D0CDE2;
+
+}
+
+.navLi {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.navElement {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navElement-active {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navElement-active > img {
+    height: 22px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navElement > img {
+    height: 22px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navElement-active > span {
+    color: #3F3D56 !important;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.navElement > span {
+    color: #D0CDE2;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.navElement > span:hover {
+    color: #3F3D56;
+    transition: 0.4s;
+}
+
+.article {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-bottom: 28%; */
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.article > h2 {
+    padding: 0px 0px 25px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.article > p {
+    display: flex;
+    justify-content: center;
+}
+
+.audio {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}   
+
+.bottom_image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 3%;
+    /* bottom: 1%;
+    left: 3%;
+    display: block; */
+}
+
+.bottom_image > a > img {
+    width: 350px;
+    height: 350px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #D0CDE1;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 50px;
+}
+
+footer > span {
+    color: #6C63FF;
+}
+  
+.myList {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style the list items */
+.myList li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    border-radius: 50px;
+    margin-top: 8px;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+/* Set all odd list items to a different color (zebra-stripes) 
+
+.myList li:nth-child(odd) {
+    background: #f9f9f9;
+}
+*/
+
+/* Darker background-color on hover */
+.myList li:hover {
+    background: #ddd;
+}
+  
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+  
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+  
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+  
+.close:hover {
+    background-color: #f44336;
+    color: white;
+    border-radius: 0px  50px  50px 0px;
+}
+  
+/* Style the header */
+.ToDoHeader {
+    background-color: #6B62FF;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+  
+/* Clear floats after the header */
+.ToDoHeader:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Style the input */
+input {
+    margin: 0;
+    border: none;
+    border-radius: 50px;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+  
+/* Style the "Add" button */
+.addBtn {
+    padding: 10px;
+    width: 15%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 100px;
+    margin-left: 30px;
+}
+  
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+@media all and (max-width: 778px) { 
+    
+    .navElement > span {
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navElement-active > span {
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navElement > img {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .navElement-active > img {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .navElement {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navElement-active {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .ToDoHeader {
+        padding: 20px 20px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .myList {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .addBtn {
+        padding: 5px;
+        width: 20%;
+        background: #d9d9d9;
+        color: #555;
+        float: left;
+        text-align: center;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 100px;
+        margin-left: 10px;
+        margin-top: 3px;
+    }
+
+    /*
+    .navLi {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .navBar {
+        display: flex;
+        opacity: 0.95;
+    }
+
+    .navElement-active > span {
+        color: #ffffff !important;
+    }
+
+    .navElement {
+        opacity: 2;
+    }
+
+    .navElement > span:hover {
+        color: #ffffff;
+    }
+
+    .navBar > ul {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+        background-color: #FAB8B8;
+        position: fixed;
+    } 
+    */
+}
